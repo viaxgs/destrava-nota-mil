@@ -32,6 +32,7 @@ const Pricing = () => {
 
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {[
+                  "Análise preditiva de temas prováveis do ENEM",
                   "Correções ilimitadas de redações",
                   "Análise das 5 competências do ENEM",
                   "Feedback detalhado em segundos",
@@ -48,8 +49,14 @@ const Pricing = () => {
                 ))}
               </div>
 
-              <Button 
-                size="lg" 
+              <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 sm:p-4 mb-6">
+                <p className="text-foreground text-sm sm:text-base font-semibold text-center">
+                  <span className="text-primary">E o melhor:</span> agora o Destrava prevê o tipo de tema que pode cair e te prepara antes da prova.
+                </p>
+              </div>
+
+              <Button
+                size="lg"
                 onClick={handleBuyClick}
                 className="w-full bg-yellow-gradient text-accent-foreground font-bold text-lg sm:text-xl py-6 sm:py-7 shadow-glow hover:shadow-glow-hover transition-all duration-200 hover:-translate-y-0.5 rounded-[14px] border-0 hover:brightness-105 mb-6 min-h-[52px]"
               >

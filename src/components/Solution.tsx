@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Brain, Zap, Target, TrendingUp, CheckCircle2 } from "lucide-react";
+import { Brain, Zap, Target, TrendingUp, CheckCircle2, Search, Lightbulb } from "lucide-react";
 import aiAnalysisImage from "@/assets/ai-analysis.jpg";
 
 const Solution = () => {
   const features = [
+    {
+      icon: Search,
+      title: "Analisa padrões de redações nota 1000",
+      description: "Mapeia temas e estilos das redações nota máxima dos últimos anos"
+    },
+    {
+      icon: Lightbulb,
+      title: "Prevê temas prováveis do ENEM 2025",
+      description: "Sugere temas e estruturas com base no que mais tem chance de cair na prova"
+    },
     {
       icon: Brain,
       title: "Corrige gramática e ortografia",
@@ -93,6 +103,8 @@ const Solution = () => {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
             {[
+              "Análise preditiva exclusiva de temas prováveis",
+              "Mapeamento de padrões das redações nota 1000",
               "Correção ortográfica e gramatical automática",
               "Análise das 5 competências do ENEM",
               "Explicação detalhada de cada erro",

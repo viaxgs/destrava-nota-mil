@@ -19,6 +19,12 @@ const HowItWorks = () => {
       icon: Award,
       title: "Receba nota + explicação + versão aprimorada",
       description: "Vê sua pontuação, entende seus erros e aprende com a versão nota 1000"
+    },
+    {
+      number: "4",
+      icon: Brain,
+      title: "IA prevê temas e padrões do próximo ENEM",
+      description: "A IA analisa padrões das redações nota 1000 e indica os temas e estruturas mais prováveis da próxima prova"
     }
   ];
 
@@ -36,7 +42,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative group">
               <div className="p-6 sm:p-8 rounded-2xl bg-card-gradient backdrop-blur-glass border border-white/10 shadow-card hover:shadow-elegant transition-all duration-200 h-full hover:-translate-y-1">

@@ -21,6 +21,15 @@ const Testimonials = () => {
       stars: 5
     },
     {
+      name: "Rafael Santos",
+      age: 18,
+      city: "Rio de Janeiro, RJ",
+      beforeScore: 700,
+      afterScore: 960,
+      text: "O Destrava me mostrou quais temas estavam em alta e acertei o foco da redação na hora! A análise preditiva é sensacional!",
+      stars: 5
+    },
+    {
       name: "Júlia Costa",
       age: 18,
       city: "Belo Horizonte, MG",
@@ -45,7 +54,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

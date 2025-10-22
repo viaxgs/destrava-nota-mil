@@ -31,6 +31,12 @@ const Hero = () => {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground font-medium leading-relaxed">
               IA especialista que analisa, corrige e reescreve suas redações em segundos — com base nos critérios oficiais do ENEM.
             </p>
+
+            <div className="bg-card-gradient backdrop-blur-glass border border-primary/20 rounded-xl p-4 sm:p-5 shadow-card">
+              <p className="text-sm sm:text-base md:text-lg text-foreground font-semibold leading-relaxed">
+                <span className="text-primary">Novidade exclusiva:</span> Agora, além de corrigir suas redações, o Destrava analisa padrões das últimas provas e mostra os temas mais prováveis do ENEM 2025.
+              </p>
+            </div>
             
             <div className="flex flex-col gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button 
