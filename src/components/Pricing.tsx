@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Check, Sparkles, Shield, Zap } from "lucide-react";
-import beforeAfterImage from "@/assets/before-after.jpg";
 
 const Pricing = () => {
   const handleBuyClick = () => {
@@ -23,16 +22,8 @@ const Pricing = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center mb-8 sm:mb-12">
-            <div className="relative order-2 lg:order-1">
-              <img 
-                src={beforeAfterImage} 
-                alt="Exemplo antes e depois da correção - de 520 para 980 pontos" 
-                className="w-full h-auto rounded-2xl shadow-elegant border border-white/10"
-              />
-            </div>
-
-            <div className="order-1 lg:order-2 bg-card-gradient backdrop-blur-glass rounded-2xl p-6 sm:p-8 shadow-card border-2 border-primary/20">
+          <div className="flex justify-center mb-8 sm:mb-12">
+            <div className="w-full max-w-2xl bg-card-gradient backdrop-blur-glass rounded-2xl p-6 sm:p-8 shadow-card border-2 border-primary/20">
               <div className="text-center mb-6">
                 <div className="text-xs sm:text-sm text-muted-foreground line-through mb-2">De R$ 97,00</div>
                 <div className="text-5xl sm:text-6xl font-black text-primary mb-2 font-poppins">R$ 29,99</div>
