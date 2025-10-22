@@ -1,38 +1,40 @@
-import { AlertCircle, Clock, BookX, TrendingDown } from "lucide-react";
+import { AlertCircle, Brain, Clock, TrendingDown } from "lucide-react";
 
 const Problem = () => {
   const problems = [
     {
-      icon: BookX,
-      title: "Não sabe por onde começar",
-      description: "Fica horas na frente da folha em branco sem saber o que escrever."
-    },
-    {
-      icon: TrendingDown,
-      title: "Nota baixa sempre",
-      description: "Estuda muito mas continua tirando notas frustrantes na redação."
-    },
-    {
-      icon: Clock,
-      title: "Perde tempo precioso",
-      description: "Demora demais para escrever e acaba não terminando a prova."
+      icon: Brain,
+      text: "Travar na hora de começar ou desenvolver ideias"
     },
     {
       icon: AlertCircle,
-      title: "Erros que você não vê",
-      description: "Comete os mesmos erros sem saber e perde pontos preciosos."
+      text: "Medo constante de fugir do tema"
+    },
+    {
+      icon: TrendingDown,
+      text: "Nota estagnada, sem entender o que melhorar"
+    },
+    {
+      icon: Clock,
+      text: "Falta de feedback rápido e didático"
     }
   ];
 
   return (
-    <section className="py-24 bg-secondary">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-background relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-foreground">
-            Você está cansado de <span className="text-primary">travar na hora de escrever?</span>
+          <div className="inline-flex items-center gap-2 bg-card-gradient backdrop-blur-glass px-5 py-2.5 rounded-full border border-destructive/20 shadow-card">
+            <AlertCircle className="w-4 h-4 text-destructive" />
+            <span className="text-foreground/90 font-medium text-sm">O Problema</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-foreground font-poppins">
+            Você não está sozinho <span className="text-destructive">nessa luta.</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Sabemos como é frustrante estudar tanto e ver a nota da redação arruinando suas chances de entrar na faculdade dos sonhos...
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Milhares de estudantes enfrentam os mesmos desafios na redação do ENEM
           </p>
         </div>
 
@@ -40,25 +42,16 @@ const Problem = () => {
           {problems.map((problem, index) => (
             <div 
               key={index}
-              className="bg-card p-6 rounded-xl shadow-elegant hover:shadow-xl transition-all duration-300 border border-border"
+              className="group p-6 rounded-2xl bg-card-gradient backdrop-blur-glass border border-white/10 shadow-card hover:shadow-elegant transition-all duration-200 hover:-translate-y-1"
             >
-              <div className="w-14 h-14 bg-destructive/10 rounded-xl flex items-center justify-center mb-4">
-                <problem.icon className="w-7 h-7 text-destructive" />
+              <div className="w-12 h-12 bg-destructive/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">
+                <problem.icon className="w-6 h-6 text-destructive" />
               </div>
-              <h3 className="font-bold text-lg text-card-foreground mb-2">
-                {problem.title}
-              </h3>
-              <p className="text-muted-foreground">
-                {problem.description}
+              <p className="text-foreground font-medium leading-relaxed">
+                {problem.text}
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-2xl font-bold text-foreground">
-            E se existisse uma forma de <span className="text-accent">mudar isso em segundos?</span>
-          </p>
         </div>
       </div>
     </section>
