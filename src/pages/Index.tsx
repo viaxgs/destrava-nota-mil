@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Testimonials />
       <Pricing />
       <Footer />
+      <StickyMobileCTA />
     </main>
   );
 };
